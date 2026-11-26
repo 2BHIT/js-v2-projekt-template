@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Mein Projekt — Starter-Stile (JavaScript V2)
+   Struktur: 1) Variablen  2) Basis  3) Header/Footer  4) Deine Komponenten
+   ========================================================================== */
+
+/* 1) Variablen — Farben & Abstände zentral ändern */
+:root {
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+  --color-text: #e2e8f0;
+  --color-accent: #facc15;
+  --radius: 0.75rem;
+  --space: 1rem;
+}
+
+/* 2) Basis */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+a {
+  color: var(--color-accent);
+}
+
+/* 3) Header & Footer */
+.site-header {
+  padding: calc(var(--space) * 2) var(--space);
+  text-align: center;
+  background: var(--color-surface);
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  opacity: 0.8;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: var(--space);
+}
+
+.site-footer {
+  padding: var(--space);
+  text-align: center;
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+/* 4) Deine Komponenten — ab hier dein Code */
